@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="petermacdonald.valorgmcompanion.CharacterSheet">
+
+    <LinearLayout
+        android:id="@+id/characterSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <include layout="@layout/character_sheet_stat_block" />
+
+        <LinearLayout
+            android:id="@+id/flawsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/flawsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/flawsTitle"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skillsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skillsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/skillsTitle"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/techList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/techniquesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/techniquesTitle"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
